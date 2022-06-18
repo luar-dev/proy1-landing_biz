@@ -4,3 +4,37 @@
   --light-blue: #00B7E5;
   --gray: #E5E5E5;
 }
+
+* {
+  font-family: 'Habibi', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+main {
+  width: 100vw;
+  height: 300px;
+  background-image: url("../images/buildings.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+}

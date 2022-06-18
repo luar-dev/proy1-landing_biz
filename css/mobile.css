@@ -20,12 +20,27 @@
   'opsz' 48
 }
 
+header {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+header p {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+}
+
 main {
+  display: flex;
   width: 100vw;
-  height: 300px;
+  height: 350px;
   background-image: url("../images/buildings.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  padding-top: 15px;
 }
 
 nav {
@@ -35,6 +50,16 @@ nav {
 }
 
 .icons {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 32px;
+  background-color: rgba(255,255,255,.35);
+  padding: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-self: center;
 }

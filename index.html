@@ -32,12 +32,20 @@
     </fieldset> -->
     <!-- <embed src="https://www.youtube.com/embed/kmk43_2dtn0" width="640" height="480"> -->
 
-
     <!-- Top Banner -->
     <section class="banner">
       <!-- menu, logo, acct icons -->
       <nav>
-        <span class="icon-menu"></span>
+        <span class="icon-menu" onclick="window.menu.showModal();"></span>
+        <dialog class="main_menu" id="menu">
+          <form method="dialog">
+            <button onclick="window.menu.close();">x</button>
+            <menu>
+              <a href="#">Savings</a>
+              <a href="#">Grow</a>
+            </menu>
+          </form>
+        </dialog>
         <img class="logo" src="./images/logo.png" alt="Company Logo">
         <span class="icon-account"></span>
       </nav>
@@ -140,5 +148,11 @@
 
   </footer>
   <!-- <span class="material-symbols-outlined">account_circle</span> -->
+
+<!--   <script type="text/javascript">
+    const menuDialog = document.getElementById('menu');
+    dialog.show();
+    dialog.hide();
+  </script> -->
 </body>
 </html>

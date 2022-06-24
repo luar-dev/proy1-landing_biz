@@ -241,6 +241,16 @@ form input {
   right: 20px;
 }
 
+.chat:hover {
+  background-color: var(--light-blue);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat p {
+  font-size: 60px;
+}
 
 
 

@@ -236,7 +236,7 @@ form input {
 
 .chat {
   position: fixed;
-  bottom: 60px;
+  bottom:40px;
   right: 20px;
   
   width: 48px;
@@ -303,10 +303,15 @@ footer a {
   text-decoration: none;
   color: var(--dark-blue);
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 footer span {
   color: var(--gold);
+}
+
+.social_network-icons {
+  width: 24px;
 }
 
 .footer--services {

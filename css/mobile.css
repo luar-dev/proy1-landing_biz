@@ -58,6 +58,9 @@ section {
 /* *************** Top Banner *************** */
 
 .top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: calc( 100vw / (640/427) );
   background-image: url("../images/buildings-small.jpg");
   background-position: top; /* ? check if needed */
@@ -142,42 +145,42 @@ section {
 
 /* halft screen menu version */
 
-h1 {
+.top__title {
   color: var(--dark-blue);
   font-size: 36px;
   background-color: rgba(255,255,255,.35);
   padding: 15px;
   width: 100%;
   height: 25%;
-  margin-top: 60px;
   text-align: center;
 }
 
-.email-section {
-  position: relative;
-  width: 300px;
-  height: 130px;
+.top-get-email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
   background-color: rgba(0,20,40,.75);;
-  clip-path: ellipse(50% 50% at 50% 50%);
-  left: -50px;
-  bottom: -40px;
+  /* clip-path: ellipse(50% 50% at 50% 50%); */
 }
 
-form label {
-  position: relative;
-  color: white;
-  font-size: 12px;
-  margin: 0;
-  padding-left: 65px;
-  top: 15px;
-}
-
-form input {
-  position: relative;
-  left:65px;
-  width: 190px;
+.top-get-email input {
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+  width: 250px;
+}
+
+.top-get-email input::placeholder {
+  font-size: 10px;
+  color: rgba(229, 229, 229);
+}
+
+.top-get-email button {
+  font-size: 18px;
+  border: none;
+  background: none;
 }
 
 /* *************** Services *************** */

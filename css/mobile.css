@@ -1,8 +1,8 @@
 :root {
-  --gold: #BE9E56;
-  --dark-blue: #003365;
-  --light-blue: #00B7E5;
-  --gray: #E5E5E5;
+  --gold: rgba(190, 158, 86, 1);
+  --dark-blue: rgba(0, 51, 101, 1);
+  --light-blue: rgba(0, 183, 229, 1);
+  --gray: rgba(229, 229, 229, 1);
   --padding-subtitles: 20px;
 
   --mainMenu_top: 0px;
@@ -57,75 +57,90 @@ section {
 
 /* *************** Top Banner *************** */
 
-.banner {
+.top-section {
   height: calc( 100vw / (640/427) );
   background-image: url("../images/buildings-small.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-position: top; /* ? check if needed */
+  /* background-repeat: no-repeat; */
+  background-size: 100% auto; /* ? check if needed */
   overflow: hidden;
 }
 
-nav {
+.top-nav {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  height: 28px;
   margin-top: 15px;
   align-self: center;
 }
 
-.logo {
-  width: 100px;
-  height:fit-content;
+.top-nav__logo {
+  order: 1;
 }
 
-.icon-menu {
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/icons/menu_24.svg");
+.top-nav__account-icon {
+  order: 2;
 }
 
-.main_menu {
-  padding: 0 20px 20px 20px;
+.top-nav__menu {
+  /* display: flex; */
+  color: var(--gray);
+  border: 0px solid #003365;
+  background: linear-gradient(90deg, rgba(0,51,101,1) 0%, rgba(0,36,71,1) 100%);
+  user-select: none;
+  width: 55%;
+  height: 50%;
+  overflow-x: hidden;
+}
+
+.top-nav__menu::backdrop {
+  background-color: rgba(0,0,0,0);
+}
+
+.top-nav__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.top-nav__menu--cross {
+  align-self: flex-end;
+  font-size: 36px;
+  font-weight: 100;
+  margin-right: 14px;
+  margin-bottom: 30px;
+}
+
+.top-nav__menu-link {
+  text-decoration: none;
+  color: var(--gray);
+  padding: 20px;
+  font-size: 28px;
+  border-top: 0.25px solid rgba(0, 183, 229, .20);
+}
+
+.top-nav__menu-link--property {
+  border-bottom: 0.25px solid rgba(0, 183, 229, .20);
+}
+
+.top-nav__menu-link:hover {
+  background-color: rgba(0, 51, 101);
+}
+
+/* start from the menu icon position */
+/* .main_menu {
+  padding: 0 20px 40px 20px;
   color: var(--gray);
   border: 0px solid #003365;
   background-color: var(--dark-blue);
   top: var(--mainMenu_top);
   left: var(--mainMenu_left);
   user-select: none;
-}
+} */
 
-.main_menu::backdrop {
-  background-color: rgba(0,0,0,0);
-}
-
-.main_menu a {
-  text-decoration: none;
-  color: var(--gray);
-  font-size: 28px;
-  margin-top: 10px;
-}
-
-.main_menu menu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.cross {
-  position: relative;
-  font-size: 36px;
-  left: 90px;
-  font-weight: 100;
-  margin-bottom: 20px;
-}
-
-
-.icon-account {
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/icons/account_circle_24.svg");
-}
+/* halft screen menu version */
 
 h1 {
   color: var(--dark-blue);

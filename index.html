@@ -23,7 +23,7 @@
     <img src="./images/icons/local_offer_white_18dp.svg" alt="">
   </header>
 
-  <main>
+  <main class="main">
 
     <!-- <fieldset>
       <legend>Subscribe to the Newsletter</legend>
@@ -33,34 +33,34 @@
     <!-- <embed src="https://www.youtube.com/embed/kmk43_2dtn0" width="640" height="480"> -->
 
     <!-- Top Banner -->
-    <section class="banner">
+    <section class="top-section">
       <!-- menu, logo, acct icons -->
-      <nav>
-        <span class="icon-menu" id="menuIcon" onclick="openMenu();"></span>
+      <nav class="top-nav">
+        <img class="top-nav__logo" src="./images/company-logo150px.png" alt="Company Logo">
+        <img class="top-nav__account-icon" src="./images/icons/account-circle28px.svg"></img>
+        <img class="top-nav__menu-icon" src="./images/icons/menu-icon28px.svg" id="menuIcon" onclick="openMenu();"></img>
 
-        <dialog class="main_menu" id="menu">
-          <form method="dialog">
-            <span class="cross" onclick="window.menu.close();">✕</span>
-            <menu>
-              <a href="#savings" onclick="window.menu.close();">Savings</a>
-              <a href="#grow" onclick="window.menu.close();">Grow</a>
-              <a href="#property" onclick="window.menu.close();">Property</a>
-            </menu>
+        <dialog class="top-nav__menu" id="menu">
+          <form class="top-nav__form" method="dialog">
+            <span class="top-nav__menu--cross" onclick="window.menu.close();">✕</span>
+
+            <!-- logo inside main menu -->
+            <!-- <img class="top-nav__dialog--logo" src="./images/logo.png" alt="Company Logo"> -->
+
+            <a class="top-nav__menu-link" href="#savings" onclick="window.menu.close();">Savings</a>
+            <a class="top-nav__menu-link" href="#grow" onclick="window.menu.close();">Grow</a>
+            <a class="top-nav__menu-link top-nav__menu-link--property" href="#property" onclick="window.menu.close();">Property</a>
           </form>
         </dialog>
-
-        <img class="logo" src="./images/logo.png" alt="Company Logo">
-
-        <span class="icon-account"></span>
       </nav>
 
-      <h1>We grow your capital.</h1>
+      <h1 class="top__title">We grow your capital.</h1>
 
       <div class="email-section">
         <form action="">
           <label for="email">
-            Registrate para recibir informacion
-            <input type="email" name="" id="email" placeholder="correo electronico">
+            Register to get more information
+            <input type="email" name="" id="email" placeholder="email address">
           </label>
         </form>
       </div>

@@ -30,7 +30,7 @@ html {
 
 header {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   background-color: var(--light-blue);
   text-align: center;
 }
@@ -38,7 +38,7 @@ header {
 header p {
   display: inline-block;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 main {
@@ -98,7 +98,6 @@ nav {
 
 .main_menu::backdrop {
   background-color: rgba(0,0,0,0);
-  /* backdrop-filter: blur(2px); */
 }
 
 .main_menu a {
@@ -116,8 +115,8 @@ nav {
 
 .cross {
   position: relative;
-  font-size: 52px;
-  left: 100px;
+  font-size: 36px;
+  left: 90px;
   font-weight: 100;
   margin-bottom: 20px;
 }
@@ -359,12 +358,28 @@ footer span {
   font-size: 18px;
 }
 
+.terms_and_policies {
+  margin: 3px 0;
+}
+
 footer p {
   margin: 10px 0;
 }
 
 hr {
   margin: 10px 0;
+}
+
+.policies_dialog {
+  width: 75%;
+  padding: 5px 20px 20px;
+  margin: auto;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.policies_dialog::backdrop {
+  backdrop-filter: blur(3px);
 }
 
 @media screen and (min-width: 768px) {

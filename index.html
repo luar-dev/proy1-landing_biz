@@ -40,11 +40,11 @@
 
         <dialog class="main_menu" id="menu">
           <form method="dialog">
-            <a class="cross" onclick="window.menu.close();">x</a>
+            <span class="cross" onclick="window.menu.close();">✕</span>
             <menu>
-              <a href="#">Savings</a>
-              <a href="#">Grow</a>
-              <a href="#">Property</a>
+              <a href="#savings" onclick="window.menu.close();">Savings</a>
+              <a href="#grow" onclick="window.menu.close();">Grow</a>
+              <a href="#property" onclick="window.menu.close();">Property</a>
             </menu>
           </form>
         </dialog>
@@ -72,21 +72,21 @@
       <h2 class="services-title">Services</h2>
 
       <div class="services-cards">
-        <section class="services-item">
+        <section class="services-item" id="savings">
           <article class="savings-img">
             <h3>Savings</h3>
           </article>
           <p>Save your money with the best interest rate.</p>
         </section>
 
-        <section class="services-item">
+        <section class="services-item" id="grow">
           <article class="grow-img">
             <h3>Grow</h3>
           </article>
           <p>Save your money with the best interest rate.</p>
         </section>
         
-        <section class="services-item">
+        <section class="services-item" id="property">
           <article class="property-img">
             <h3>Property</h3>
           </article>
@@ -135,27 +135,42 @@
 
     <section>
       <h2>Services</h2>
-      <a class="footer--services" href="#">savings<span> ></span></a>
-      <a class="footer--services" href="#">grow<span> ></span></a>
-      <a class="footer--services" href="#">property<span> ></span></a>
+      <a class="footer--services" href="#savings">savings<span> ></span></a>
+      <a class="footer--services" href="#grow">grow<span> ></span></a>
+      <a class="footer--services" href="#property">property<span> ></span></a>
       <h2>follow us</h2>
       <a class="social_network-icons" href="#"><img src="./images/icons/twitter_social_icons-circle-white.svg" alt=""></a>
 
       <hr>
 
-      <a
-        class="terms_and_policies"
-        href=""
-        onclick="window.privacyPolicy.showModal();"
-      >Privacy Policy</a>
-      <dialog id="privacyPolicy">
+      <p class="terms_and_policies" onclick="window.privacyPolicy.showModal();">
+        Privacy Policy
+      </p>
+      <dialog class="policies_dialog" id="privacyPolicy">
         <form method="privacyPolicy">
-          <button onclick="window.privacyPolicy.close();">x</button>
+          <span onclick="window.privacyPolicy.close();">✕</span>
           <h2>Privacy Policy</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
         </form>
       </dialog>
-      <a class="terms_and_policies" href="#">Terms and Conditions</a>
-      <a class="terms_and_policies" href="#">Services Policy</a>
+
+      <p class="terms_and_policies" onclick="window.termsAndConditions.showModal();">Terms and Conditions</p>
+      <dialog class="policies_dialog" id="termsAndConditions">
+        <form method="termsAndConditions">
+          <span onclick="window.termsAndConditions.close();">✕</span>
+          <h2>Terms and Conditions</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
+        </form>
+      </dialog>
+
+      <p class="terms_and_policies" onclick="window.servicesPolicy.showModal();">Services Policy</p>
+      <dialog class="policies_dialog" id="servicesPolicy">
+        <form method="servicesPolicy">
+          <span onclick="window.servicesPolicy.close();">✕</span>
+          <h2>Services Policy</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
+        </form>
+      </dialog>
 
       <p>© MAGNET INVESTMENTS 1998 - 2022. All rights reserved.</p>
 

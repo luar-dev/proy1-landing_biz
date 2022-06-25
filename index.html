@@ -183,6 +183,13 @@
     function findTopLeft(element) {
       var rec = document.getElementById(element).getBoundingClientRect();
 
+      /* check if clicked outside */
+      //const specifiedElement = document.getElementById("menu");
+
+      document.addEventListener("scroll", (event) => {
+        window.menu.close();
+      });
+
       return {
         top: rec.top + window.scrollY,
         left: rec.left + window.scrollX

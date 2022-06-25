@@ -86,14 +86,13 @@ nav {
 }
 
 .main_menu {
-  /* display: flex; */
-  /* flex-direction: column; */
   padding: 0 20px 20px 20px;
   color: var(--gray);
   border: 0px solid #003365;
   background-color: var(--dark-blue);
   top: var(--mainMenu_top);
   left: var(--mainMenu_left);
+  user-select: none;
 }
 
 .main_menu::backdrop {
@@ -376,6 +375,8 @@ hr {
   margin: auto;
   border: 0px;
   border-radius: 5px;
+
+  scroll-behavior: contain;
 }
 
 .policies_dialog::backdrop {

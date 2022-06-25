@@ -36,7 +36,7 @@
     <section class="banner">
       <!-- menu, logo, acct icons -->
       <nav>
-        <span class="icon-menu" onclick="window.menu.showModal();"></span>
+        <span class="icon-menu" id="menuIcon" onclick="openMenu();"></span>
         <dialog class="main_menu" id="menu">
           <form method="dialog">
             <button onclick="window.menu.close();">x</button>
@@ -118,6 +118,7 @@
     <section class="chat"></section>
   </main>
 
+  <!-- footer -->
   <footer>
 
     <section>
@@ -138,7 +139,17 @@
 
       <hr>
 
-      <a class="terms_and_policies" href="#">Privacy Policy</a>
+      <a
+        class="terms_and_policies"
+        href=""
+        onclick="window.privacyPolicy.showModal();"
+      >Privacy Policy</a>
+      <dialog id="privacyPolicy">
+        <form method="privacyPolicy">
+          <button onclick="window.privacyPolicy.close();">x</button>
+          <h2>Privacy Policy</h2>
+        </form>
+      </dialog>
       <a class="terms_and_policies" href="#">Terms and Conditions</a>
       <a class="terms_and_policies" href="#">Services Policy</a>
 
@@ -147,12 +158,27 @@
     </section>
 
   </footer>
-  <!-- <span class="material-symbols-outlined">account_circle</span> -->
 
-<!--   <script type="text/javascript">
-    const menuDialog = document.getElementById('menu');
-    dialog.show();
-    dialog.hide();
-  </script> -->
+  <script type="text/javascript">
+    function findTopLeft(element) {
+      var rec = document.getElementById(element).getBoundingClientRect();
+
+      return {
+        top: rec.top + window.scrollY,
+        left: rec.left + window.scrollX
+      };
+    }
+
+    function openMenu() {
+      var root = document.querySelector(':root');
+      var rootStyles = getComputedStyle(root);
+      //var deg = rootStyles.getPropertyValue('--mainMenu_top');
+
+      root.style.setProperty('--mainMenu_top', findTopLeft('menuIcon').top + 'px');
+      root.style.setProperty('--mainMenu_left', findTopLeft('menuIcon').left + 'px');
+
+      window.menu.showModal();
+    }
+  </script>
 </body>
 </html>

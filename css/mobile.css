@@ -4,6 +4,9 @@
   --light-blue: #00B7E5;
   --gray: #E5E5E5;
   --padding-subtitles: 20px;
+
+  --mainMenu_top: 37px;
+  --mainMenu_left: 0px;
 }
 
 * {
@@ -82,9 +85,16 @@ nav {
   background-image: url("../images/icons/menu_24.svg");
 }
 
+.main_menu {
+  border: 1px solid #003365;
+  position: absolute;
+  top: 37px;
+  left: var(--mainMenu_left);
+}
 
 .main_menu::backdrop {
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
+  background-color: rgba(0,0,0,0);
 }
 
 .icon-account {

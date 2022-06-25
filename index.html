@@ -37,16 +37,20 @@
       <!-- menu, logo, acct icons -->
       <nav>
         <span class="icon-menu" id="menuIcon" onclick="openMenu();"></span>
+
         <dialog class="main_menu" id="menu">
           <form method="dialog">
-            <button onclick="window.menu.close();">x</button>
+            <a class="cross" onclick="window.menu.close();">x</a>
             <menu>
               <a href="#">Savings</a>
               <a href="#">Grow</a>
+              <a href="#">Property</a>
             </menu>
           </form>
         </dialog>
+
         <img class="logo" src="./images/logo.png" alt="Company Logo">
+
         <span class="icon-account"></span>
       </nav>
 
@@ -160,6 +164,7 @@
   </footer>
 
   <script type="text/javascript">
+
     function findTopLeft(element) {
       var rec = document.getElementById(element).getBoundingClientRect();
 
@@ -172,6 +177,8 @@
     function openMenu() {
       var root = document.querySelector(':root');
       var rootStyles = getComputedStyle(root);
+
+      //store value in a variable
       //var deg = rootStyles.getPropertyValue('--mainMenu_top');
 
       root.style.setProperty('--mainMenu_top', findTopLeft('menuIcon').top + 'px');
@@ -179,6 +186,7 @@
 
       window.menu.showModal();
     }
+
   </script>
 </body>
 </html>

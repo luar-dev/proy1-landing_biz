@@ -5,7 +5,7 @@
   --gray: #E5E5E5;
   --padding-subtitles: 20px;
 
-  --mainMenu_top: 37px;
+  --mainMenu_top: 0px;
   --mainMenu_left: 0px;
 }
 
@@ -86,16 +86,42 @@ nav {
 }
 
 .main_menu {
-  border: 1px solid #003365;
-  position: absolute;
-  top: 37px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 0 20px 20px 20px;
+  color: var(--gray);
+  border: 0px solid #003365;
+  background-color: var(--dark-blue);
+  top: var(--mainMenu_top);
   left: var(--mainMenu_left);
 }
 
 .main_menu::backdrop {
-  /* backdrop-filter: blur(2px); */
   background-color: rgba(0,0,0,0);
+  /* backdrop-filter: blur(2px); */
 }
+
+.main_menu a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.main_menu menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.cross {
+  position: relative;
+  font-size: 52px;
+  left: 100px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
 
 .icon-account {
   width: 24px;

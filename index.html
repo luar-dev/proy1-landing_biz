@@ -24,14 +24,12 @@
   </header>
 
   <main class="main">
-
-    <!-- Top Banner -->
+    <!-- Top Section -->
     <section class="top-section">
-      <!-- menu, logo, acct icons -->
       <nav class="top-nav">
         <img class="top-nav__logo" src="./images/company-logo150px.png" alt="Company Logo">
         <img class="top-nav__account-icon" src="./images/icons/account-circle28px.svg"></img>
-        <img class="top-nav__menu-icon" src="./images/icons/menu-icon28px.svg" id="menuIcon" onclick="openMenu();"></img>
+        <img class="top-nav__menu-icon" src="./images/icons/menu-icon28px.svg" id="menuIcon" onclick="window.menu.showModal();"></img>
 
         <dialog class="top-nav__menu" id="menu">
           <form class="top-nav__form" method="dialog">
@@ -47,7 +45,6 @@
       <h1 class="top__title">We grow your capital.</h1>
 
       <div class="top-get-email">
-        <!-- <embed src="https://www.youtube.com/embed/kmk43_2dtn0" width="640" height="480"> -->
         <form action="">
           <input type="email" name="email" id="email" placeholder="Register your email to get more information.">
           <button>📧</button>
@@ -65,21 +62,21 @@
           <article class="savings-img">
             <h3>Savings</h3>
           </article>
-          <p>Save your money with the best interest rate.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo!</p>
         </section>
 
         <section class="services-item" id="grow">
           <article class="grow-img">
             <h3>Grow</h3>
           </article>
-          <p>Save your money with the best interest rate.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla explicabo nostrum excepturi incidunt consequatur aspernatur voluptatum maxime deleniti quidem voluptate!</p>
         </section>
         
         <section class="services-item" id="property">
           <article class="property-img">
             <h3>Property</h3>
           </article>
-          <p>Save your money with the best interest rate.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam, necessitatibus fugiat sit suscipit consequatur?</p>
         </section>
       </div>
       
@@ -91,8 +88,8 @@
       <div>
         <section>
           <span>⭐⭐⭐⭐⭐</span>
-          <h3>The best company</h3>
-          <blockquote>I had been looking for a company which I could trust my life savings with and I today I can say I finally found it.</blockquote>
+          <h3>Lorem, ipsum dolor</h3>
+          <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptates, impedit aperiam rerum illum iure in expedita ea voluptate eum placeat. Natus sed pariatur possimus ipsum ut maiores perspiciatis unde, perferendis consequatur eius, autem a dignissimos fuga numquam? Mollitia, eveniet.</blockquote>
           <h4>Michelle McDonald</h4>
         </section>
 
@@ -100,9 +97,9 @@
 
         <section>
           <span>⭐⭐⭐⭐</span>
-          <h3>The best company</h3>
-          <blockquote>I had been looking for a company which I could trust my life savings with and I today I can say I finally found it.</blockquote>
-          <h4>Michelle McDonald</h4>
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur non, voluptatibus reprehenderit exercitationem voluptas quo dolorum beatae totam eos omnis?</blockquote>
+          <h4>John Doe</h4>
         </section>
       </div>
     </section>
@@ -112,9 +109,9 @@
   </main>
 
   <!-- footer -->
-  <footer>
+  <footer class="footer">
 
-    <section>
+    <section class="footer-offices">
       <h2>Offices</h2>
       <h3>new york</h3>
       <address>40 Washington Square S<br>New York, NY 10012</address>
@@ -122,81 +119,64 @@
       <address>40 Washington Square S<br>New York, NY 10012</address>
     </section>
 
-    <section>
+    <section class="footer-services">
       <h2>Services</h2>
-      <a class="footer--services" href="#savings">savings<span> ></span></a>
-      <a class="footer--services" href="#grow">grow<span> ></span></a>
-      <a class="footer--services" href="#property">property<span> ></span></a>
+      <a class="footer-services__link" href="#savings">savings<span> ></span></a>
+      <a class="footer-services__link" href="#grow">grow<span> ></span></a>
+      <a class="footer-services__link" href="#property">property<span> ></span></a>
       <h2>follow us</h2>
-      <a class="social_network-icons" href="#"><img src="./images/icons/twitter_social_icons-circle-white.svg" alt=""></a>
+
+      <a
+        class="footer-services__social-network-icon--twitter"
+        href=""
+      >
+        <img src="./images/icons/twitter_social_icons-circle-white.svg" alt="">
+      </a>
 
       <hr>
 
-      <p class="terms_and_policies" onclick="window.privacyPolicy.showModal();">
+      <p class="footer-services__terms-policies" onclick="window.privacyPolicy.showModal();">
         Privacy Policy
       </p>
-      <dialog class="policies_dialog" id="privacyPolicy">
+      <dialog class="footer-services__modal" id="privacyPolicy">
         <form method="privacyPolicy">
           <span onclick="window.privacyPolicy.close();">✕</span>
           <h2>Privacy Policy</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quaerat id quisquam asperiores, totam vel consequuntur quasi expedita. Pariatur odio cupiditate ullam? Suscipit dolore ut modi, accusantium odit accusamus reiciendis voluptatum, sed nam commodi unde optio saepe molestias. Quasi voluptas incidunt corporis illum, voluptate repellendus voluptatum iste, delectus possimus sed quod rerum nihil at totam tenetur impedit quia quis quos ipsa non. Accusantium adipisci molestiae blanditiis perferendis porro corrupti sed magni doloremque odit at beatae nulla, ut, perspiciatis aspernatur atque veniam impedit ducimus excepturi error? Possimus, earum? Esse officia accusantium ducimus, corporis delectus similique repellat sapiente laboriosam totam id obcaecati?</p>
         </form>
       </dialog>
 
-      <p class="terms_and_policies" onclick="window.termsAndConditions.showModal();">Terms and Conditions</p>
-      <dialog class="policies_dialog" id="termsAndConditions">
+      <p class="footer-services__terms-policies" onclick="window.termsAndConditions.showModal();">Terms and Conditions</p>
+      <dialog class="footer-services__modal" id="termsAndConditions">
         <form method="termsAndConditions">
           <span onclick="window.termsAndConditions.close();">✕</span>
           <h2>Terms and Conditions</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae, veniam quam quidem earum sequi distinctio explicabo excepturi placeat, nulla voluptates totam odit expedita alias, non consequatur consectetur culpa modi odio necessitatibus corrupti eum! Soluta quod cupiditate aliquid voluptatem fugit, alias dolorem quisquam suscipit architecto laboriosam, corporis recusandae, reprehenderit nemo maiores deleniti facere esse fuga laudantium explicabo possimus non. Voluptatum modi laudantium laborum? In minus quibusdam libero, velit fugit necessitatibus adipisci rem amet et praesentium illum, molestiae eveniet, tempora repellat.</p>
         </form>
       </dialog>
 
-      <p class="terms_and_policies" onclick="window.servicesPolicy.showModal();">Services Policy</p>
-      <dialog class="policies_dialog" id="servicesPolicy">
+      <p class="footer-services__terms-policies" onclick="window.servicesPolicy.showModal();">Services Policy</p>
+      <dialog class="footer-services__modal" id="servicesPolicy">
         <form method="servicesPolicy">
           <span onclick="window.servicesPolicy.close();">✕</span>
           <h2>Services Policy</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit dolore debitis maxime adipisci consequatur corporis ut quidem temporibus, nobis ea? Distinctio dicta natus nostrum quos necessitatibus officiis sapiente ipsa!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur excepturi consectetur quisquam iure itaque, vel perspiciatis qui saepe quam esse optio asperiores voluptatum deserunt vitae voluptatem architecto laudantium nemo ipsa autem ab perferendis. Necessitatibus minus vitae ullam aliquam ipsum nam amet! Labore cupiditate deserunt enim harum officia necessitatibus. Excepturi aut, magnam temporibus omnis consequatur debitis voluptatum ad, deserunt repudiandae eos doloremque molestias tempore, consectetur odit veritatis dolores assumenda. Autem inventore officiis, amet tempora atque natus ea sunt eos minus in, corrupti neque error deserunt quod quisquam officia delectus iure tenetur optio commodi modi! Quidem voluptatem magni quam necessitatibus obcaecati iste sed temporibus laudantium voluptate, minima amet possimus est alias inventore eligendi atque reiciendis officiis, vitae aliquid voluptates vel recusandae rem consectetur quo! Quis ipsam mollitia accusamus, consequatur vero quidem deleniti illo totam perferendis quam maxime impedit tenetur culpa velit aliquam repellat adipisci hic eum nisi optio illum fuga magnam esse.</p>
         </form>
       </dialog>
 
-      <p>© MAGNET INVESTMENTS 1998 - 2022. All rights reserved.</p>
-
+      <p class="footer-services__copyright">© MAGNET INVESTMENTS 1998 - 2022. All rights reserved.</p>
     </section>
 
   </footer>
 
   <script type="text/javascript">
 
-    function findTopLeft(element) {
-      var rec = document.getElementById(element).getBoundingClientRect();
-
-      /* check if clicked outside */
-      //const specifiedElement = document.getElementById("menu");
-
-      document.addEventListener("scroll", (event) => {
-        window.menu.close();
-      });
-
-      return {
-        top: rec.top + window.scrollY,
-        left: rec.left + window.scrollX
-      };
-    }
-
-    function openMenu() {
-      var root = document.querySelector(':root');
-      var rootStyles = getComputedStyle(root);
-
-      //store value in a variable
-      //var deg = rootStyles.getPropertyValue('--mainMenu_top');
-
-      root.style.setProperty('--mainMenu_top', findTopLeft('menuIcon').top + 'px');
-      root.style.setProperty('--mainMenu_left', findTopLeft('menuIcon').left + 'px');
-
-      window.menu.showModal();
-    }
+    document.addEventListener("scroll", (event) => {
+      window.menu.close();
+    });
 
   </script>
 </body>

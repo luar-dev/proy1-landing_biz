@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 .material-symbols-outlined {
@@ -151,7 +152,6 @@ section {
   background-color: rgba(255,255,255,.35);
   padding: 15px;
   width: 100%;
-  height: 25%;
   text-align: center;
 }
 
@@ -169,11 +169,11 @@ section {
   padding: 5px;
   font-size: 12px;
   border: none;
-  width: 250px;
+  width: 280px;
 }
 
 .top-get-email input::placeholder {
-  font-size: 10px;
+  font-size: 12px;
   color: rgba(229, 229, 229);
 }
 
@@ -328,58 +328,55 @@ section {
   ! 1,100;1,300
 */
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   padding: 15px 30px 30px 30px;
   background-color: var(--gray);
+  
   color: var(--dark-blue);
-  font-size: 12px;
-  text-decoration: none;
 }
 
-footer h2 {
+.footer h2 {
   color: var(--light-blue);
   text-transform: capitalize;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-footer h3 {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-footer address {
-  margin-bottom: 20px;
-}
-
-footer a {
+.footer-services__link {
   text-decoration: none;
+  font-size: 24px;
   color: var(--dark-blue);
   margin-bottom: 5px;
   text-transform: capitalize;
 }
 
-footer span {
+.footer span {
   color: var(--gold);
 }
 
-.social_network-icons {
-  width: 24px;
+.footer-services__social-network-icon--twitter {
+  width: 28px;
 }
 
-.footer--services {
-  font-size: 18px;
+.footer h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.terms_and_policies {
+.footer address {
+  margin-bottom: 20px;
+}
+
+.footer-services__terms-policies {
   margin: 3px 0;
 }
 
-footer p {
+.footer-services__copyright {
+  font-size: 12px;
   margin: 10px 0;
 }
 
@@ -387,19 +384,28 @@ hr {
   margin: 10px 0;
 }
 
-.policies_dialog {
+.footer-services__modal {
   width: 75%;
   padding: 5px 20px 20px;
   margin: auto;
   border: 0px;
   border-radius: 5px;
-
-  scroll-behavior: contain;
 }
 
-.policies_dialog::backdrop {
+.footer-services__modal::backdrop {
   backdrop-filter: blur(3px);
 }
+
+.footer-services__modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-services__modal span {
+  align-self: flex-end;
+  font-size: 28px;
+}
+
 
 @media screen and (min-width: 768px) {
 

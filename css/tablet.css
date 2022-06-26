@@ -1,77 +1,24 @@
-/* @media only screen and (min-width: 425px) {
-  main {
-    background-image: url("../images/buildings-medium.jpg");
+@media screen and (min-width: 768px) {
+
+  .top__title {
+    font-size: 58px;
   }
 
-  .logo {
-    width: 150px;
+  .services-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
-} */
-
-@media only screen and (min-width: 500px) {
-  header p {
-    display: inline-block;
-    color: white;
-    font-size: 16px;
+  .reviews div {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
   }
 
-  h1 {
-    font-size: 46px;
-    margin-top: 100px;
+  .reviews section {
+    width: 35%;
   }
 
-  .icon-menu {
-    width: 40px;
-    height: 40px;
-    background-image: url("../images/icons/menu_40.svg");
-  }
-
-  .icon-account {
-    width: 40px;
-    height: 40px;
-    background-image: url("../images/icons/account_circle_40.svg");
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 56px;
-  }
-
-  .logo {
-    width: 180px;
-  }
-
-  .email-section {
-    position: relative;
-    width: 600px;
-    height: 260px;
-    background-color: rgba(0,20,40,.75);;
-    clip-path: ellipse(50% 50% at 50% 50%);
-    left: -210px;
-    bottom: -110px;
-  }
-
-  form label {
-    position: relative;
-    color: white;
-    font-size: 18px;
-    margin: 0;
-    padding-left: 230px;
-    top: 45px;
-  }
-
-  form input {
-    position: relative;
-    left: 230px;
-    width: 287px;
-    font-size: 18px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  h1 {
-    font-size: 64px;
-  }
 }

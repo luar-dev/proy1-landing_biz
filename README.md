@@ -22,4 +22,4 @@ Landing page for a company offering investment services.
 	- Copyright
 ## Responsive Design
 - Mobile
-- Desktop
+- Tablet/Desktop

@@ -4,9 +4,6 @@
   --light-blue: rgba(0, 183, 229, 1);
   --gray: rgba(229, 229, 229, 1);
   --padding-subtitles: 20px;
-
-  --mainMenu_top: 0px;
-  --mainMenu_left: 0px;
 }
 
 * {
@@ -19,14 +16,6 @@
 html {
   scroll-behavior: smooth;
   user-select: none;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300,
-  'GRAD' 200,
-  'opsz' 48
 }
 
 header {
@@ -144,8 +133,6 @@ section {
   user-select: none;
 } */
 
-/* halft screen menu version */
-
 .top__title {
   color: var(--dark-blue);
   font-size: 36px;
@@ -184,6 +171,7 @@ section {
 }
 
 /* *************** Services *************** */
+
 .services {
   display: flex;
   flex-direction: column;
@@ -244,15 +232,13 @@ section {
 }
 
 
-
 /* *************** Reviews *************** */
 
-
 .reviews {
-  background-color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--dark-blue);
 }
 
 .reviews h2 {
@@ -404,27 +390,4 @@ hr {
 .footer-services__modal span {
   align-self: flex-end;
   font-size: 28px;
-}
-
-
-@media screen and (min-width: 768px) {
-
-  .services-title {
-    font-size: 60px;
-  }
-
-  .services-cards {
-    flex-direction: row;
-    justify-content: space-around
-  }
-
-  .services-item {
-    margin: 40px 0;
-  }
-
-  .services-item p {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
 }
